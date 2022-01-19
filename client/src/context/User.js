@@ -19,7 +19,6 @@ function UserProvider({ children }) {
           setLoggedIn(false);
         } else {
           setUser(data);
-          // console.log(data);
           setLoggedIn(true);
         }
       });
@@ -45,14 +44,6 @@ function UserProvider({ children }) {
     setUser(user);
     setLoggedIn(true);
   };
-  //   const updateNotes = data => {
-  //     // console.log(data);
-  //     const newNote = {
-  //       text: data.text,
-  //       updated_at: data.updated_at,
-  //     };
-  //     setNotes([...notes, newNote]);
-  //   };
   const addPost = data => {
     const newPost = {
       author_id: data.author_id,
@@ -104,8 +95,6 @@ function UserProvider({ children }) {
     <UserContext.Provider
       value={{
         user,
-        // updateNotes,
-        // notes,
         login,
         logout,
         signup,

@@ -50,11 +50,11 @@ const NavBar = () => {
         <Link to="/" className="nav">
           Home
         </Link>
-        <Link to="signup" className="nav">
-          signup
-        </Link>
         <Link to="login" className="nav">
           login
+        </Link>
+        <Link to="signup" className="nav">
+          signup
         </Link>
       </div>
     );

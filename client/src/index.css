@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
 }
+.welcome {
+  text-align: center;
+  color: white;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -177,4 +181,11 @@ a:link {
   border: 2px solid rgb(185, 67, 67);
   box-shadow: none;
   outline: none;
+}
+
+.img-logo {
+  text-align: center;
+  border-radius: 35px;
+  max-width: 450px;
+  padding: 1rem;
 }

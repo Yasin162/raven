@@ -7,15 +7,15 @@ import Login from "./Login";
 import Signup from "./Signup";
 import Post from "./Post";
 import AddPost from "./AddPost";
+// import ravenLogo from "./images/ravenlogo.png";
 
 function App() {
   return (
     <div className="container">
-      {/* <PostProvider> */}
       <BrowserRouter>
         <UserProvider>
           <NavBar />
-          <img className="logo-img" src="./images/ravenlogo" alt="" />
+          {/* <img className="img-logo" src={ravenLogo} alt="" /> */}
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/posts" element={<Home />} />
@@ -26,7 +26,6 @@ function App() {
           </Routes>
         </UserProvider>
       </BrowserRouter>
-      {/* </PostProvider> */}
     </div>
   );
 }
